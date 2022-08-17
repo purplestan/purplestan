@@ -1,0 +1,17 @@
+#include<stdio.h>
+ void main()
+{
+    int k,i,p,q;
+    int a[k];
+    scanf("%d",&k);
+    int array[k-1];   
+    for (i=0;i<k-1;i++)    
+        scanf("%d",&array[i]);
+    q=array[0];
+    for (i=1;i<k-1;i++)
+        p=p^array[i];
+    for (i=2,q=1;i<=k;i++)
+        q=q^i; 
+    q=q^p;  
+    printf("%d\n",q);
+}
