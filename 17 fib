@@ -1,0 +1,14 @@
+// a c program to generate finonacci series below 100 using arrays
+//output:
+#include<stdio.h>
+main()
+{
+	int fibc[100];
+	int i;
+	fibc[0]=0;
+	fibc[1]=1;
+	for(i=2;i<12;i++)
+	fibc[i]=fibc[i-1]+fibc[i-2];
+	for(i=0;i<12;i++)
+	printf("%3d",fibc[i]);
+}
